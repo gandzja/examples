@@ -1,0 +1,141 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    background: linear-gradient(45deg,#9AE5BA 75%, #8667C1 25%);
+    color: #795DA8;
+    font-family: Raleway;
+    line-height: 1.5;
+}
+header{
+  background: white;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin: 150px 120px 0;
+}
+.header__block-photo{
+  /*width: 50%;*/
+  /*margin-right: 66px;*/
+}
+.header__block-about_me {
+  /*width: 50%;*/
+  padding-right: 50px;
+  padding-top: 50px;
+  /*margin-left: 66px;*/
+}
+.title {
+  text-transform: uppercase;
+}
+.title:first-child {
+  font-size: 20px;
+}
+.firstname {
+  font-size: 50px;
+  color: #77C79D;
+  font-weight: bold;
+}
+.lastname {
+  font-size: 66px;
+  font-weight: bold;
+}
+.position {
+  font-size: 23px;
+  color: #77C79D;
+}
+.line{
+  border: none; 
+  background-color: #414042; 
+  color: #414042; 
+  height: 2px; 
+}
+.square {
+  width: 450px;
+  height: 450px;
+  background: #8667C1;
+  position:absolute;
+}
+.greeting {
+  color: white;
+  font-size: 64px;
+  /*font-weight: 900;*/
+  float: left;
+  transform: rotate(90deg);
+  position:relative;
+  left:50px; 
+  top:150px;
+  text-transform: uppercase;
+}
+.photo {
+  transform: translate(210px, -45px);
+}
+img {
+  max-width: 350px;
+  position:relative;
+  /*padding: 50px 0;*/
+}
+.icon {
+  fill: currentColor;
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+}
+a {
+  color: #795DA8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.links {
+  display: flex;
+  margin: 10px 0 20px 0;
+  font-size: 14px;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+}
+.links__block {
+  flex: 0 0 auto;
+  margin: 0px;
+}
+.link-item {
+  display: flex;
+}
+.link-item svg {
+  margin-right: 20px;
+}
+main {
+  background-color: white;
+  margin: 0 120px;
+  padding: 0 120px;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+/*.block_text {
+  margin: 0 120px;
+}*/
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.job {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+.job-title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.job-company {
+  font-weight: bold;
+  line-height: 1.2;
+}
