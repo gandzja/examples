@@ -10,12 +10,16 @@ body {
   font-family: Raleway;
   line-height: 1.5;
 }
+
+.wrapper {
+  background-color: white;
+  margin: 120px;
+  padding: 0 100px;
+  }
 header{
-  background: white;
   display: flex;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-  margin: 150px 120px 0;
   flex-wrap: wrap;
 }
 .header__block-photo{
@@ -23,11 +27,11 @@ header{
 }
 .header__block-about_me {
   width: 50%;
-  padding-right: 50px;
   padding-top: 50px;
 }
 .title {
   text-transform: uppercase;
+  color: #614582;
 }
 .title:first-child {
   font-size: 20px;
@@ -55,34 +59,34 @@ header{
   width: 450px;
   height: 450px;
   background: #795DA8;
+  position: absolute;
+  left: 120px;
 }
 .greeting {
   color: white;
   font-size: 64px;
   transform: rotate(90deg);
   position: absolute;
-  left: 125px;
+  left: 110px;
   top: 325px;
   text-transform: uppercase;
 }
 .photo {
   position: absolute;
   left: 300px;
-  top: 200px;
+  top: 170px;
 }
 img {
   max-width: 350px;
 }
+
 .icon {
   fill: currentColor;
-  /*display: inline-block;*/
-  /*font-size: inherit;*/
   height: 1rem;
   overflow: visible;
-
 }
 a {
-  color: #795DA8;
+  color: #614582;
   text-decoration: none;
 }
 a:hover {
@@ -94,6 +98,7 @@ a:hover {
   display: flex;
 }
 .links__block {
+  color: #614582;
   margin-right: 30px;
 }
 .links__block:last-child {
@@ -112,47 +117,289 @@ a:hover {
   margin-right: 5px;
 }
 main {
-  background-color: white;
-  margin: 0 120px;
-  padding: 0 120px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 150px;
+
 }
 .block_text {
   flex-basis: 45%;
+  padding-bottom: 60px;
 }
 h2 {
   font-weight: bold;
   font-size: 32px;
   text-transform: uppercase;
-}
-.block_text_skill {
-  background: orange;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-  position: relative;
-  left: -120px;
+  color: #614582;
+  padding: 30px 0;
 }
 
-.text-pos {
-  position: relative;
-  left: 125px;
-  clip: auto;
+.traning-title {
+  padding-bottom: 15px;
 }
+
 .job {
-  padding-bottom: 24px;
-  margin-bottom: 24px;
+  /*display: inline-block;*/
+  /*padding-bottom: 24px;*/
+  /*margin-bottom: 24px;*/
 }
 .job-title-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  font-size: 18px;
+  position: relative;
+  left: 115px;
+  top: -115px;
+  padding-right: 100px;
 }
 
-.job-company {
+.job-company, .institute, .traning-title {
   font-weight: bold;
   line-height: 1.2;
+  padding: 10px 0;
 }
+
+.data-job {
+  background-color: #614582;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  line-height: 100px;
+  /*margin-right: 50px;*/
+}
+
+.line_vertical {
+  border: none;
+  background-color: #614582;
+  color: #614582;
+  height: 5px;
+  transform: rotate(90deg);
+  position: relative;
+  left: -155px;
+
+}
+.line_vertical-first {
+  top: 190px;
+}
+
+.line_vertical-second {
+  top: 40px;
+}
+
+.position-job {
+/*position: relative;*/
+  /*top: -65px;*/
+  /*font-size: 18px;*/
+  /*border-left: 8px solid #7450C1;*/
+  /*padding-left: 100px;*/
+  /*margin-left: 50px;*/
+}
+
+.icon_hs {
+  fill: #58c79a;
+  width: 5rem;
+  margin: 5px;
+}
+
+/*.icon_hs:first-child {*/
+  /*margin-left: 0;*/
+/*}*/
+
+.svg-flex {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  align-items: baseline;
+}
+
+@media print {
+  /* здесь будут стили для печати */
+  @page {
+    margin: 0.5cm;
+  }
+  body {
+    font-size: 14px;
+  }
+  .wrapper {
+    margin: 30px;
+    padding: 0 10px;
+  }
+  .square {
+    display: none;
+  }
+  .greeting {
+    /*color: black;*/
+    /*font-size: 32px;*/
+    /*position: absolute;*/
+    /*left: 320px;*/
+    /*top: 120px;*/
+    /*transform: rotate(0deg);*/
+    /*text-transform: uppercase;*/
+    display: none;
+  }
+  .photo {
+    position: absolute;
+    left: 40px;
+    top: 95px;
+  }
+  img {
+    max-width: 150px;
+  }
+  .header__block-photo{
+    width: 30%;
+  }
+  .header__block-about_me {
+    width: 70%;
+    /*padding-top: 50px;*/
+  }
+  .title {
+    text-transform: uppercase;
+    color: #212121;
+    margin-top: 25px;
+  }
+  .title:first-child {
+    font-size: 14px;
+  }
+  .firstname {
+    font-size: 32px;
+    color: #212121;
+    font-weight: bold;
+  }
+  .lastname {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .position {
+    font-size: 14px;
+    color: #212121;
+  }
+  .line{
+    border: none;
+    background-color: #414042;
+    color: #414042;
+    height: 2px;
+  }
+  .icon {
+    fill: currentColor;
+    height: 1rem;
+    overflow: visible;
+  }
+  .links {
+    /*margin: 5px 0 10px 0;*/
+    font-size: 14px;
+    display: flex;
+  }
+  .links__block {
+    color: #212121;
+    /*margin-right: 15px;*/
+  }
+  .links__block:last-child {
+    margin-right: 0;
+  }
+  .link-item {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    align-items: baseline;;
+    margin-bottom: 5px;
+  }
+  .link-item:last-child {
+    margin-bottom: 0;
+  }
+  .link-item svg {
+    margin-right: 5px;
+  }
+
+  main {
+    display: flex;
+  }
+  .block_text {
+   padding-bottom: 0.5cm;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #212121;
+    padding: 10px 0;
+  }
+  .traning-title {
+    padding-bottom: 5px;
+  }
+  .job-title-container {
+    position: relative;
+    left: 115px;
+    top: -115px;
+    padding-right: 10px;
+  }
+
+  .job-company, .institute, .traning-title {
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 2px 0;
+  }
+
+  .data-job {
+    background-color: #4B5362;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    line-height: 100px;
+  }
+
+  .line_vertical {
+    /*border: none;*/
+    /*background-color: #4B5362;*/
+    /*color: #4B5362;*/
+    /*height: 5px;*/
+    /*transform: rotate(90deg);*/
+    /*position: relative;*/
+    /*left: -155px;*/
+    display: none;
+  }
+  .line_vertical-first {
+    top: 190px;
+  }
+
+  .line_vertical-second {
+    top: 40px;
+  }
+
+  .icon_hs {
+    fill: #1E3D2D;
+    width: 2rem;
+    margin: 1px;
+  }
+
+  .svg-flex {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    align-items: baseline;
+  }
+  br {
+    display: none;
+  }
+}
+
+/*@media (width: 320px) {*/
+  /*.wrapper {*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*padding: 0 30px;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*background-color: white;*/
+  /*}*/
+  /*.header__block-about_me {*/
+    /*padding-top: 500px;*/
+  /*}*/
+/*}*/
+
+
+/*@media (min-width: 544px) { !* Стили CSS ... *! }*/
+
