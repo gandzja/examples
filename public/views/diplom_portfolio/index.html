@@ -15,7 +15,11 @@
     
     <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700&display=swap" rel="stylesheet" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon-16x16.png" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon/favicon.ico" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
 <!-- loader -->
@@ -42,9 +46,6 @@
         <div class="cssload-loader-line-wrap"></div>
       </div>
     </div>
-    <!-- <div class="jquery-script-ads" align="center" style="margin:30px auto">
-      <script type="text/javascript" src="https://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-    </div> -->
 
 <!-- page -->
 
@@ -66,9 +67,10 @@
         <div class="cloud"></div>
       </div>
     </div>
-<!-- menu -->
+    
 <!-- main block -->
     <div class="wrapper">
+<!-- menu -->
       <section class="stage">
         <div class="div"><p class="p"><a href="#home">Home</a></p>
         </div>
@@ -81,8 +83,13 @@
       </section>
       <main>
         <div class="home" id="home"></div>
-        <!-- <div class="about" id="about">Hi! I am Anna Kuzminova. I am thirty four years old, graduated from the National Metallurgical Academy of Ukraine. I worked as a clerk for more than ten years. After I felt that my professional growth had stopped, I decided to change my field of activity. I chose IT because I was always interested in it and this area is constantly evolving. Since March of this year, I have been studying front-end development courses in Level UP. I want to become a good specialist and work as a front-end developer. I like to walk in the fresh air, take pictures of nature, travel, read and listen to good rock music.</div> -->
-        <div class="about" id="about">Привет! Меня зовут Анна Кузьминова.Мне тридцать четыре года, закончила Национальную Металлургическую Академию Украины. Я более десяти лет работала как  делопроизводитель. После того как почувствовала, что мой профессиональный рост остановился, решила сменить сферу деятельности. Я выбрала IT так как меня это всегда интересовало и эта сфера постоянно развивается. С марта этого года я учусь на курсах front-end разработка в Level UP. Хочу стать хорошим специалистом и работать как front-end разработчик. Мне нравится гулять на свежем воздухе, фотографировать природу, путешествовать, читать и слушать хорошую рок музыку.</div>
+
+        <div class="about" id="about">
+          <div class="container">
+            <p>Привет! Меня зовут Анна Кузьминова.Мне тридцать четыре года, закончила Национальную Металлургическую Академию Украины. Я более десяти лет работала как  делопроизводитель. После того как почувствовала, что мой профессиональный рост остановился, решила сменить сферу деятельности. Я выбрала IT так как меня это всегда интересовало и эта сфера постоянно развивается. С марта этого года я учусь на курсах front-end разработка в Level UP. Хочу стать хорошим специалистом и работать как front-end разработчик. Мне нравится гулять на свежем воздухе, фотографировать природу, путешествовать, читать и слушать хорошую рок музыку.
+            </p>
+          </div>
+        </div>
         
         <div class="gallery" id="gallery">
           <div class="container">
@@ -93,8 +100,8 @@
                     <div class="content-card">
                       <div class="img-card"></div>
                       <div class="text-card">
-                        <div class="title-card"></div>
-                        <div class="subtitle-card"></div>
+                        <div class="title-card">Учебный сайт на Bootstrap</div>
+                        <div class="subtitle-card">Bootstrap</div>
                       </div>
                     </div>
                   </div>
@@ -106,7 +113,7 @@
                     <div class="content-card">
                       <div class="img-card"></div>
                       <div class="text-card">
-                        <div class="title-card"></div>
+                        <div class="title-card">Учебный сайт портфолио</div>
                         <div class="subtitle-card"></div>
                       </div>
                     </div>
@@ -119,7 +126,7 @@
                     <div class="content-card">
                       <div class="img-card"></div>
                       <div class="text-card">
-                        <div class="title-card"></div>
+                        <div class="title-card">Мое резюме</div>
                         <div class="subtitle-card"></div>
                       </div>
                     </div>
@@ -137,33 +144,35 @@
               <p>17 Adlers'ka Street, Dnipro, Ukraine</p>
             </div>
             <div class="link-item">
-              
               <a href="tel:+38096-339-3498"><i class="fa fa-mobile" aria-hidden="true"></i>+380963393498</a>
             </div>
             <div class="link-item">
-              
-              <a href="mailto:annakuzminova@protonmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>annakuzminova@protonmail.com</a>
-            </div>
+              <a href="mailto:annakuzminova@protonmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>annakuzminova@protonmail.com</a></div>
             <div class="link-item">
-              
               <a href="https://www.linkedin.com/in/annakuzminova/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>/annakuzminova</a>
             </div>
           </div>
         </div>
       </main>
     </div>
+    
 
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
     <script src="js/common.js"></script>
+
     <script>
       $('.cssload-loader-inner').preloadinator({
         minTime: 3000
       });
     </script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="/examples/vendors/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
   </body>
 </html>

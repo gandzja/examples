@@ -1,0 +1,35 @@
+body {
+}
+
+
+a {
+  transition: 0.2s ease-out;
+  text-decoration:none;
+  color: #e97a7a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.container {
+  padding-top: 100px;
+}
+
+.outline {
+  background-color: transparent;
+  color: inherit;
+  transition: all .25s;
+}
+
+.btn-danger.outline {
+  color: #d9534f;
+}
+
+.btn-danger.outline:hover {
+  color: #fff;
+}
