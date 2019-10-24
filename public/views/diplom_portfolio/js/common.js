@@ -38,7 +38,7 @@ $(function() {
       $('.wrap-card').each(function() {
         $(this).css('z-index', 0);
       });
-        $(this).css('z-index', 10);
+        $(this).css('z-index', 99);
         $(this).toggleClass('open');
   })
 })

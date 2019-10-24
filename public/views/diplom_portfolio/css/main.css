@@ -464,7 +464,7 @@ p.greeting {
 }
 .about-me {
   font-size: 1.2rem;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -618,7 +618,7 @@ p.greeting {
   background-size: cover;
   left: 0;
 }
-.gallery-sites {max-width: 800px;margin: 0 auto;}
+.gallery-sites {max-width: 700px;margin: 0 auto;}
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -662,8 +662,8 @@ p.greeting {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .wrap-card.open {
-  width: 715px;
-  height: 535px;
+  width: 360px;
+  height: 398px;
   -webkit-transition: width 750ms, height 250ms 200ms, -webkit-transform 750ms;
   transition: width 750ms, height 250ms 200ms, -webkit-transform 750ms;
   transition: transform 750ms, width 750ms, height 250ms 200ms;
@@ -676,10 +676,10 @@ p.greeting {
   right: -9999px;
   -webkit-transform-origin: top;
           transform-origin: top;
-  width: 1200px;
+  width: 716px;
   -webkit-transform: scale(0.43);
           transform: scale(0.43);
-  height: 890px;
+  height: 800px;
   border-radius: 3px;
   background: #fff;
   overflow: hidden;
@@ -689,11 +689,14 @@ p.greeting {
   transition: transform 750ms cubic-bezier(0.4, 0.0, 0.2, 1), -webkit-transform 750ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 .wrap-card.open .content-card {
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
+          -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+          -moz-transform: scale(0.5);
+          -ms-transform: scale(0.5);
+          -o-transform: scale(0.5);
 }
 .wrap-card .img-card {
-  height: 360px;
+  height: 325px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -734,23 +737,20 @@ p.greeting {
 .title-card a:hover {
   color: #548420;
 }
-
+.wrapper-gallary-card img {
+  width: 630px;
+}
 .subtitle-card {
-  /* width: 60%; */
   font-size: 1.5rem;
 }
 
 
 .contact {
-
   color:#248A87;
-  /* margin-top: 200px; */
   position: relative;
-  /* background-image: url(/image/clouds_3.png); */
   background-repeat: no-repeat;
   text-align: center;
   background-size: cover;
-  /* left: 0; */
 }
 
 .forest {
@@ -760,6 +760,7 @@ p.greeting {
   background-size: cover;
   height: 100vh;
   background-position: top center;
+  position: relative;
 }
 .forest-cont{
   position: absolute;
@@ -1028,11 +1029,7 @@ i {
 }
 
 
-/* @media (min-width: 2558px) {
-
-  .stage {
-    top: calc(50% - 400px);
-}
+@media (min-width: 2540px) {
 
   .x1 {
     -webkit-transform: scale(1.8);
@@ -1145,14 +1142,159 @@ i {
     max-width: 1440px;
   }
 
-  .gallery-sites {max-width: 1440px;margin: 0 auto;}
-
   .wrap-card.open {
-    width: 963px;
-    height: 745px;
+    width: 573px;
+    height: 630px;
   }
   .wrap-card div.content-card {
-    height: 980px;;
+    height: 780px;;
+  }
+  .wrap-card.open .content-card {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+
+
+  .title-card {
+    font-size: 2.7em;
+    text-align: center;
+  }
+  .forest-cont {
+    bottom: 5%;
+  }
+  .subtitle-card {
+    font-size: 2em;
+  }
+
+  .block-social {
+    font-size: 4em;
+  }
+  .block-adress {
+    font-size: 2em;
+  }
+  .block-contacts {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1920px) and (max-width: 2539px) {
+
+  .x1 {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    -moz-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    -o-transform: scale(1.8);
+}
+
+  .x2 {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -o-transform: scale(1.6);
+}
+
+  .x3 {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+  .x4 {
+    -webkit-transform: scale(1.9);
+    transform: scale(1.9);
+    -moz-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    -o-transform: scale(1.9);
+}
+
+  .x5 {
+    -webkit-transform: scale(1.55);
+    transform: scale(1.55);
+    -moz-transform: scale(1.55);
+    -ms-transform: scale(1.55);
+    -o-transform: scale(1.55);
+}
+  .x6 {
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
+    -moz-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    -o-transform: scale(1.7);
+}
+  .x7 {
+    -webkit-transform: scale(1.85);
+    transform: scale(1.85);
+    -moz-transform: scale(1.85);
+    -ms-transform: scale(1.85);
+    -o-transform: scale(1.85);
+}
+  .x8 {
+    -webkit-transform: scale(1.45);
+    transform: scale(1.45);
+    -moz-transform: scale(1.45);
+    -ms-transform: scale(1.45);
+    -o-transform: scale(1.45);
+}
+  .x9 {
+    -webkit-transform: scale(1.35);
+    transform: scale(1.35);
+    -moz-transform: scale(1.35);
+    -ms-transform: scale(1.35);
+    -o-transform: scale(1.35);
+}
+  .x10 {
+    -webkit-transform: scale(1.6);
+    transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -o-transform: scale(1.6);
+}
+
+  .home {
+    padding: 400px 0;
+  }
+
+  .greeting {
+    font-size: 6em;
+  }
+  p.greeting {
+    font-size: 50px;
+  }
+
+  .bg-cloud_top {
+    background: url(/image/s_14.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1180px;
+    margin-bottom: -630px;
+  }
+  .bg-cloud_bottom {
+    background: url(/image/s_14.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1185px;
+    margin-top: -534px;
+  }
+
+  .container {
+    margin: 0 290px;
+  }
+  .about-me {
+    font-size: 2.5rem;
+    max-width: 1440px;
+  }
+
+  .wrap-card.open {
+    width: 573px;
+    height: 630px;
+  }
+  .wrap-card div.content-card {
+    height: 780px;;
   }
   .wrap-card.open .content-card {
     -webkit-transform: scale(0.8);
@@ -1168,7 +1310,11 @@ i {
   .subtitle-card {
     font-size: 2em;
   }
-
+  .forest-cont {
+    position: absolute;
+    left: 35%;
+    bottom: 5%;
+  }
   .block-social {
     font-size: 4em;
   }
@@ -1178,104 +1324,36 @@ i {
   .block-contacts {
     font-size: 2em;
   }
-} */
+}
 
-/* @media (max-width: 2557px) and (min-width: 1400px) {
-  .home {
-    padding: 400px 0;
-  }
-
-  .greeting {
-    font-size: 6em;
-  }
-  p.greeting {
-    font-size: 50px;
-  }
-
-  .bg-cloud_top {
-    height: 1180px;
-    margin-bottom: -630px;
-  }
-  .bg-cloud_bottom {
-    height: 1185px;
-    margin-top: -534px;
-  }
+@media (max-width: 1918px) and (min-width: 1439px) {
   .container {
-    margin: 0 100px;
+    margin: 0 220px;
   }
-  .about-me {
-    font-size: 2rem;
-    max-width: 800px;
+  .forest-cont {
+    bottom: 7%;
   }
+}
 
-  .gallery-sites {max-width: 1440px;margin: 0 auto;}
-
-  .wrap-card.open {
-    width: 715px;
-    height: 553px;
+@media (max-width: 1250px)  {
+  .div:nth-child(odd){
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
   }
-  .wrap-card div.content-card {
-    height: 890px;;
-  }
-  .wrap-card.open .content-card {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-
-  .title-card {
-    font-size: 2rem;
-  }
-
-  .subtitle-card {
-    font-size: 1.5rem;
-  }
-
-  .block-social {
-    font-size: 4em;
-  }
-  .block-adress {
-    font-size: 2em;
-  }
-  .block-contacts {
-    font-size: 2em;
-  }
-} */
-
-/* @media (max-width: 768px)  {
-
-  .cloud {
-    display: none;
+  .div:nth-child(even){
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
   }
   .stage {
     flex-direction: row;
-    left: 68px;
+    left: 5%;
+    right: 5%;
     top: 0;
   }
-  .div {
-    width: 160px;
-    height: 30px;
-  }
-  .p {
-    font-size: 1.5rem;
-  }
+  .div {margin-right: 40px;}
+  .div:last-child {margin-right: 0;}
 
-  .pic-container {
-    flex-basis: 35%;
-  }
-  .wrap-card.open {
-    width: 485px;
-    height: 345px;
-  }
-  .wrap-card div.content-card {
-    height: 860x;;
-  }
-  .wrap-card.open .content-card {
-            -webkit-transform: scale(0.4);
-            transform: scale(0.4);
-            -moz-transform: scale(0.4);
-            -ms-transform: scale(0.4);
-            -o-transform: scale(0.4);
-}
+
   .title-card {
     font-size: 2em;
     text-align: center;
@@ -1284,4 +1362,7 @@ i {
   .subtitle-card {
     font-size: 1.5em;
   }
-} */
+  .forest-cont {
+    bottom: 7%;
+  }
+}
