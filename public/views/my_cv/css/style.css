@@ -213,9 +213,9 @@ h2 {
 		margin: 100px;
 		padding: 0 80px;
 	}
-	.header__block-about_me {
-		/* padding-top: 30px; */
-	}
+	/* .header__block-about_me {
+		padding-top: 30px;
+	} */
 	.title:first-child {
 		font-size: 18px;
 	}
